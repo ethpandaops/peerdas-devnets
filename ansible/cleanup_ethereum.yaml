@@ -33,6 +33,8 @@
             - "geth"
             - "nethermind"
             - "execution"
+            - "execution-init"
+            - "reth"
             # Consensus layer clients
             - "lighthouse-validator"
             - "lighthouse"
@@ -43,6 +45,7 @@
             - "prysm"
             - "teku-validator"
             - "teku"
+            - "grandine"
             - "beacon"
             - "validator"
             # Others
@@ -61,6 +64,7 @@
             - /data/ethereumjs
             - /data/geth
             - /data/nethermind
+            - /data/reth
             # Consensus layer data
             - /data/lighthouse
             - /data/lighthouse-validator
@@ -72,6 +76,8 @@
             - /data/prysm-validator
             - /data/teku
             - /data/teku-validator
+            - /data/grandine
+            - /data/grandine-validator
             # Config files
             - /data/ethereum-network-config
             - /data/execution-auth.secret
