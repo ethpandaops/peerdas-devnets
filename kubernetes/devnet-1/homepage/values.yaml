@@ -103,7 +103,7 @@ testnet-homepage:
         ethstatsUrl: https://ethstats.peerdas-devnet-1.ethpandaops.io
         chainName: "peerdas-devnet-1"
         chainId: "7068553372"
-        github: https://github.com/ethpandaops/peerdas-devnets/tree/master/network-configs/devnet-1
+        github: https://github.com/ethpandaops/peerdas-devnets/tree/master/network-configs/devnet-1/metadata
       metamask:
         enabled: true
       logo:
