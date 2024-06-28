@@ -14,8 +14,8 @@ This repository contains the infrastructure code used to setup ~all~ dev/testnet
 
 Status   | Network    | Links   | Ansible                                                      | Terraform | Kubernetes
 ------   | --------   | ----     |  -----                                                       | -------   | ------
-On🟢 | [devnet-1](https://peerdas-devnet-1.ethpandaops.io)   | [Network config](network-configs/devnet-1) / [Inventory](https://bootnode-1.srv.devnet-1.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.srv.devnet-1.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-1) | [🔗](terraform/devnet-1) | [🔗](kubernetes/devnet-1)
-Off🔴 | [devnet-0](https://peerdas-devnet-0.ethpandaops.io)   | [Network config](network-configs/devnet-0) / [Inventory](https://bootnode-1.srv.devnet-0.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.srv.devnet-0.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-0) | [🔗](terraform/devnet-0) | [🔗](kubernetes/devnet-0)
+On🟢 | [devnet-1](https://peerdas-devnet-1.ethpandaops.io)   | [Network config](network-configs/devnet-1) / [Inventory](https://bootnode-1.devnet-1.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.devnet-1.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-1) | [🔗](terraform/devnet-1) | [🔗](kubernetes/devnet-1)
+Off🔴 | [devnet-0](https://peerdas-devnet-0.ethpandaops.io)   | [Network config](network-configs/devnet-0) / [Inventory](https://bootnode-1.devnet-0.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.devnet-0.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-0) | [🔗](terraform/devnet-0) | [🔗](kubernetes/devnet-0)
 
 # Development
 ## Version management for tools
@@ -125,11 +125,11 @@ from the [ansible/](ansible/) directory to clean up the network-configs and vali
 * To get the IP addresses of the nodes, run `terraform output` from the [terraform/devnet-0/](terraform/devnet-0/) directory.
 * To get the validator ranges run
 ```shell
-curl -s https://bootnode-1.srv.devnet-0.ethpandaops.io/meta/api/v1/validator-ranges.json
+curl -s https://bootnode-1.devnet-0.ethpandaops.io/meta/api/v1/validator-ranges.json
 ```
 * To get which validator proposed a specific block run
 ```shell
-ethdo --connection=https://user:password@bn.lighthouse-nethermind-1.srv.devnet-0.ethpandaops.io block info --blockid 100 --json | jq -r .message.proposer_index | ./whose_validator.zsh
+ethdo --connection=https://user:password@bn.lighthouse-nethermind-1.devnet-0.ethpandaops.io block info --blockid 100 --json | jq -r .message.proposer_index | ./whose_validator.zsh
 ```
 from the [ansible/](ansible/) directory.
 * Getting execution layer client enodes
