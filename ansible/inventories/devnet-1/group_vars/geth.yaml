@@ -17,7 +17,6 @@ geth_container_env:
 geth_container_command_extra_args:
   - --http.api=eth,net,web3,debug,admin
   - --http.vhosts=*
-  - --state.scheme=path
   - --networkid={{ ethereum_network_id }}
   - --syncmode=full
   - --bootnodes={{ ethereum_el_bootnodes | join(',') }}
@@ -27,7 +26,6 @@ geth_init_custom_network_genesis_file: "{{ eth_testnet_config_dir }}/genesis.jso
 geth_init_custom_network_container_command:
   - --datadir=/data
   - init
-  - --state.scheme=path
   - /genesis.json
 geth_container_pull: true
 
