@@ -103,6 +103,13 @@
     - role: ethpandaops.general.dora
       tags: [dora]
 
+
+- hosts: goomy
+  become: true
+  roles:
+    - role: ethpandaops.general.goomy
+      tags: [goomy]
+
 - hosts: localhost
   roles:
     - role: ethpandaops.general.ethereum_post_network_setup
