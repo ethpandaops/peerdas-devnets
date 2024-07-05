@@ -5,7 +5,7 @@ default_ethereum_client_images:
   nimbus: ethpandaops/nimbus-eth2:kzgpeerdas-6b0223b
   prysm: ethpandaops/prysm-beacon-chain:peerDAS-913e84d
   prysm_validator: gcr.io/prysmaticlabs/prysm/validator:latest
-  teku: ethpandaops/teku:nashatyrev-das-e8d5fba
+  teku: ethpandaops/teku:nashatyrev-das-d459f61
   grandine: ethpandaops/grandine:das-16e416e
 ### Execution layer clients
   besu: hyperledger/besu:latest
