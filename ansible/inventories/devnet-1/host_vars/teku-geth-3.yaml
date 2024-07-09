@@ -10,3 +10,4 @@ teku_container_command_extra_args:
   - --Xlog-include-p2p-warnings-enabled
   - --metrics-block-timing-tracking-enabled
   - --ignore-weak-subjectivity-period-enabled
+  - --Xrust-kzg-enabled
