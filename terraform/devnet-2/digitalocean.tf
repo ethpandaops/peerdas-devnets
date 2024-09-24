@@ -310,7 +310,7 @@ resource "local_file" "ansible_inventory" {
             group           = try(split(":", tolist(server.tags)[2])[1], "unknown")
             validator_start = try(split(":", tolist(server.tags)[5])[1], 0)
             validator_end   = try(split(":", tolist(server.tags)[4])[1], 0) # if the tag is not a number it will be 0 - e.g no validator keys
-            supernode       = try(split(":", tolist(server.tags)[3])[1], "false")
+            supernode       = try(title(split(":", tolist(server.tags)[3])[1]), "False")
             tags            = "${server.tags}"
             hostname        = "${split(".", key)[0]}"
             cloud           = "digitalocean"
