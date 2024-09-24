@@ -52,12 +52,12 @@
     "eip5656TransitionTimestamp": "0x0",
     "eip6780TransitionTimestamp": "0x0",
     "depositContractAddress": "0x6f22fFbC56eFF051aECF839396DD1eD9aD6BBA9D",
-    "eip2537TransitionTimestamp": "0x1176c020c8d3",
-    "eip2935TransitionTimestamp": "0x1176c020c8d3",
-    "eip6110TransitionTimestamp": "0x1176c020c8d3",
-    "eip7002TransitionTimestamp": "0x1176c020c8d3",
-    "eip7251TransitionTimestamp": "0x1176c020c8d3",
-    "eip7702TransitionTimestamp": "0x1176c020c8d3"
+    "eip2537TransitionTimestamp": "0x1176c020d485",
+    "eip2935TransitionTimestamp": "0x1176c020d485",
+    "eip6110TransitionTimestamp": "0x1176c020d485",
+    "eip7002TransitionTimestamp": "0x1176c020d485",
+    "eip7251TransitionTimestamp": "0x1176c020d485",
+    "eip7702TransitionTimestamp": "0x1176c020d485"
   },
   "genesis": {
     "seal": {
@@ -68,7 +68,7 @@
     },
     "difficulty": "0x01",
     "author": "0x0000000000000000000000000000000000000000",
-    "timestamp": "0x66f2c897",
+    "timestamp": "0x66f2d449",
     "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "extraData": "",
     "gasLimit": "0x17d7840"

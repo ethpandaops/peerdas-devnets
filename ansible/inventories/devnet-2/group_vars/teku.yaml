@@ -45,8 +45,6 @@ teku_container_command_extra_args:
   - --Xlog-include-p2p-warnings-enabled
   - --metrics-block-timing-tracking-enabled
   - --ignore-weak-subjectivity-period-enabled
-  - --p2p-subscribe-all-custody-subnets-enabled
 teku_validator_container_volumes:
   - "{{ teku_validator_datadir }}:/validator-data"
-  - "{{ eth_testnet_config_dir }}:/network-config:ro"
 teku_validator_datadir: /data/teku-validator
