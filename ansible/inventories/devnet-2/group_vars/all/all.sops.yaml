@@ -20,14 +20,17 @@ tx_fuzz_blobs_privkey: ENC[AES256_GCM,data:XUiDF6puTOcP0veM5k2x9PmPSA2vP1FeoxSY7
 tx_fuzz_txs_privkey: ENC[AES256_GCM,data:c52KtPzcxyZPj3vQ6tx0Di5uLFy5JoRUSZ5ZH/WEj7nqC7JTwRw3+bNPk8Y43wjE7caqRZ7eq0la0Bc42ydpew==,iv:gHO+ttqzJCbRBCUvmlsTVNQK6vpnGXamIag63HS/fas=,tag:1Qultc6tndFGDuSKjm/TVg==,type:str]
 goomy_private_key: ENC[AES256_GCM,data:+AwqAcOobrvR5gXxdABQki0rH41Ns8H3sJvVtQb5sh/596u1oDPq2bEh6Tpkfx8B+x4rSp+MRQi5wHwk9/Nqcw==,iv:Ibm4sLvU+tNk7EqaSPs/2CRLU1yLlNDgSWjR+uNPrvQ=,tag:oWbWW/jt9pPTWFcRoVTBsg==,type:str]
 nethermind_seq_api_key: ENC[AES256_GCM,data:Zg0SODORD54P9n85F/2cp3MiQvQ=,iv:tNCA6W6hJm1PybTE2piAhfUjDKCqQWeN2FQfgiayJC0=,tag:Vo+R3gcYDAAGRPq3cMcvvA==,type:str]
+nethermind_seq_server: ENC[AES256_GCM,data:H3G1mfT5Cr+lfG3bAfoeIf2y5yVakDDxHg==,iv:3uWO4N9Lga8eYz4DPaMnApdU4hm5gmTvmfo9wmK/1zI=,tag:RjnziVFH/GkWSY8jyJwzxw==,type:str]
+nethermind_push_gateway: ENC[AES256_GCM,data:tT+zfsrU0XS4rluMi/fGpJtCmI8f/fHQ8dCI1oXefrlreelrAAMhsPSaiTPmtqRrJJRjOS1OvqxFiZHOUhUogB/Ux0AGjW4p2El7t5Z08//GvgawVv7+saxj2sCMlfwpeIUAri0jAFaXt8r/7DQfgSv+4w/SKLCChnl2t4JfJjP1iJYO5SSZnp6UsoItR1bJYA==,iv:J6T0wKwuJWr1SurTIOjrIxuKclHfhnEnOBbsVBdAkBk=,tag:grgfx8SGmzYBnazu+S8lrQ==,type:str]
+secret_xatu_event_ingester_secret: ENC[AES256_GCM,data:/K0awTdZlYnjXZ9M4eUbTo22FyiWV9UqBFoza1y8M3qCAb0=,iv:KH9Qn32ASd9W0AfXFjGLi9gsyiZI4GSjfKEyMkwDqCU=,tag:9iYl53rRy92ait+BxEC3Fg==,type:str]
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2024-09-24T13:17:05Z"
-    mac: ENC[AES256_GCM,data:s/+sUGu0zFBv6kIJBf30NSYLNsI4D1ajBWJZ3m9bvszD2ymJU53ZQmrmDK8+ShIS1aO7g3d3/L0EOOCFoFP2RVO2CaTpRIGshlBqDcRRyPGllk/8vk9J1X919gmaKNS1LrAqwyvdiEPivYDllC/sMMnchp6JumcaWYSDIP8GPEU=,iv:nITrYik72sMDhDohwjIuXtiLu2rCjBOXYl1g41VcbKE=,tag:fO3rGKnASE9a+sHtpGtwwQ==,type:str]
+    lastmodified: "2024-09-26T07:51:48Z"
+    mac: ENC[AES256_GCM,data:AzX2zm4uf9SFk9Ld3ltid73nKCscbEpXAbP/xr5bEjYdmM5qflddtek2bucgrbLZLukFd/DYPX9NF2UFhYXCITuHyKmCaXgM9Drawrb5O4BTZBh12z3Dd4DIlN4MDgcQ4M/28+pXvBnE8KWt2rkba+lbIS3KhXHkq+XssFq46oM=,iv:XXa6Z6A9Iw6+5Q932eTidvRTI1f7R9SVh5cjzjLhKys=,tag:MxVsggR8g8RG+B8iWExSKQ==,type:str]
     pgp:
         - created_at: "2023-09-28T11:48:21Z"
           enc: |-

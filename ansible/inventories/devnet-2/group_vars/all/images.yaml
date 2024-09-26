@@ -3,10 +3,10 @@ default_ethereum_client_images:
   lighthouse: ethpandaops/lighthouse:unstable-2792705
   lodestar: ethpandaops/lodestar:peerDAS-cec27d6
   nimbus: ethpandaops/nimbus-eth2:pdsync-30f8ef9
-  prysm: ethpandaops/prysm-beacon-chain:peerDAS-linux-amd64-b2a7813
-  prysm_validator: gcr.io/prysmaticlabs/prysm/validator:latest
+  prysm: ethpandaops/prysm-beacon-chain:peerDAS-e45a130
+  prysm_validator: ethpandaops/prysm-validator:peerDAS-e45a130
   teku: ethpandaops/teku:nashatyrev-das-458f7e7
-  grandine: ethpandaops/grandine:hangleang-fix-negotiation-timeout-f9abd77
+  grandine: ethpandaops/grandine:hangleang-feature-das-2c2f74b
 ### Execution layer clients
   besu: hyperledger/besu:latest
   geth: ethereum/client-go:stable
