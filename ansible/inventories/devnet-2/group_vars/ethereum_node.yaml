@@ -1,7 +1,8 @@
 ethereum_cl_bootnodes:
   - "{{ hostvars['bootnode-1']['cl_bootnode_fact_enr'] }}"
   - "{{ hostvars['bootnode-1']['ethereum_node_fact_cl_enr'] }}"
-
+  - "{{ hostvars['nimbus-geth-5']['ethereum_node_fact_cl_enr'] }}"
+  - "{{ hostvars['lighthouse-geth-5']['ethereum_node_fact_cl_enr'] }}"
 ethereum_el_bootnodes:
   - "{{ hostvars['bootnode-1']['ethereum_node_fact_el_enode'] }}"
 
