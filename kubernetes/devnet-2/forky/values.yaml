@@ -30,7 +30,7 @@ forky:
       addr: ":9090"
       enabled: true
     forky:
-      retention_period: "1m"
+      retention_period: "15m"
       store:
         type: memory
       indexer:
