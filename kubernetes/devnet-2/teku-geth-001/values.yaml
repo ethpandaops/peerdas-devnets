@@ -80,6 +80,7 @@ teku-geth-001:
               - --Xlog-include-p2p-warnings-enabled
               - --metrics-block-timing-tracking-enabled
               - --ignore-weak-subjectivity-period-enabled
+              - --rest-api-docs-enabled
             prysm:
               - --grpc-gateway-corsdomain=*
               - --chain-config-file=/data/network-config/config.yaml
@@ -196,7 +197,7 @@ teku-geth-001:
     fullnameOverride: teku-geth-001
     image:
       repository: ethpandaops/teku
-      tag: nashatyrev-das-78406d3
+      tag: nashatyrev-das-b3320d2
       pullPolicy: Always
     mode: "beacon"
     p2pNodePort:
