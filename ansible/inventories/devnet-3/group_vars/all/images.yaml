@@ -1,8 +1,8 @@
 default_ethereum_client_images:
 ### Consensus layer clients
-  lighthouse: ethpandaops/lighthouse:unstable-2792705
+  lighthouse: ethpandaops/lighthouse:unstable-8cf686f
   lodestar: ethpandaops/lodestar:peerDAS-513bccc
-  nimbus: ethpandaops/nimbus-eth2:pdsync-87ed912
+  nimbus: ethpandaops/nimbus-eth2:pdsync-51cff05
   prysm: ethpandaops/prysm-beacon-chain:peerDAS-ae626d5
   prysm_validator: ethpandaops/prysm-validator:peerDAS-ae626d5
   teku: ethpandaops/teku:nashatyrev-das-cefa2c5

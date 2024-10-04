@@ -37,6 +37,9 @@ assertoor:
           - path: /
             pathType: Prefix
 
+  persistence:
+    enabled: true
+
   endpoints:
     - name:  bootnode-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.bootnode-1.peerdas-devnet-3.ethpandaops.io
