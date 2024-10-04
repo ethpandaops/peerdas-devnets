@@ -59,3 +59,4 @@ prometheus_config: |
         - targets: ["{{ vars[ethereum_node_cl + '_container_name'] }}:{{ ethereum_node_cl_ports_metrics }}"]
           labels:
             instance: "{{ inventory_hostname }}"
+            supernode: "{{ ethereum_node_cl_supernode_enabled | bool }}"
