@@ -31,11 +31,12 @@ dora:
      value: "true"
    - name: FRONTEND_SHOW_SENSITIVE_PEER_INFOS
      value: "true"
-   
+   - name: FRONTEND_SHOW_PEER_DAS_INFOS
+     value: "true"
   postgresql:
     name: "dora-postgresql"
     fullnameOverride: "dora-postgresql"
-  
+
   endpoints:
   # Rpc
   - url: http://teku-geth-001:5052
