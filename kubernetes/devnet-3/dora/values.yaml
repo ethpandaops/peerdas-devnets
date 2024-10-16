@@ -4,7 +4,7 @@ dora:
   fullnameOverride: dora
   image:
     repository: ethpandaops/dora
-    tag: peerdas-as-deneb-column-view-latest
+    tag: master-latest
     pullPolicy: Always
   resources:
     requests:
