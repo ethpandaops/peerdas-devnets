@@ -2,7 +2,7 @@ default_ethereum_client_images:
 ### Consensus layer clients
   lighthouse: ethpandaops/lighthouse:unstable-8cf686f
   lodestar: ethpandaops/lodestar:peerDAS-513bccc
-  nimbus: ethpandaops/nimbus-eth2:pdsync-fc8f3e0
+  nimbus: ethpandaops/nimbus-eth2:pdsync-a479c7b
   prysm: ethpandaops/prysm-beacon-chain:peerDAS-ae626d5
   prysm_validator: ethpandaops/prysm-validator:peerDAS-ae626d5
   teku: ethpandaops/teku:nashatyrev-das-cefa2c5
@@ -32,7 +32,7 @@ default_tooling_images:
   eth_fauceth: chainflag/eth-faucet:latest
   blobscan: blossomlabs/blobscan:latest
   blobscan_indexer: blossomlabs/blobscan-indexer:latest
-  dora: ethpandaops/dora:peerdas-as-deneb-column-view-latest
+  dora: ethpandaops/dora:master-latest
   dugtrio: ethpandaops/dugtrio:latest
   ethereum_genesis_generator: ethpandaops/ethereum-genesis-generator:3.3.7
   tracoor: ethpandaops/tracoor:0.0.25-debian
