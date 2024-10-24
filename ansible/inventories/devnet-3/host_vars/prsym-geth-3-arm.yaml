@@ -14,3 +14,4 @@ default_ethereum_client_images:
   ethereumjs: ethpandaops/ethereumjs:master
   nethermind: nethermindeth/nethermind:master
   reth: ethpandaops/reth:main
+prysm_container_tty: true
