@@ -180,6 +180,7 @@ variable "nimbus_geth" {
     count           = 6
     validator_start = 1800
     validator_end   = 2400
+    ipv6            = false
   }
 }
 

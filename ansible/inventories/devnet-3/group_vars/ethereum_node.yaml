@@ -4,12 +4,19 @@ ethereum_cl_bootnodes:
   - "{{ hostvars['prysm-geth-1']['ethereum_node_fact_cl_enr'] }}"
   - "{{ hostvars['prysm-geth-2']['ethereum_node_fact_cl_enr'] }}"
   - "{{ hostvars['prysm-geth-3']['ethereum_node_fact_cl_enr'] }}"
+  - "{{ hostvars['prysm-geth-4']['ethereum_node_fact_cl_enr'] }}"
+  - "{{ hostvars['lodestar-geth-2']['ethereum_node_fact_cl_enr'] }}"
+  - "{{ hostvars['lodestar-geth-4']['ethereum_node_fact_cl_enr'] }}"
+  - "{{ hostvars['lodestar-geth-6']['ethereum_node_fact_cl_enr'] }}"
 ethereum_el_bootnodes:
   #- "{{ hostvars['bootnode-1']['ethereum_node_fact_el_enode'] }}"
   - "{{ hostvars['prysm-geth-1']['ethereum_node_fact_el_enode'] }}"
   - "{{ hostvars['prysm-geth-2']['ethereum_node_fact_el_enode'] }}"
   - "{{ hostvars['prysm-geth-3']['ethereum_node_fact_el_enode'] }}"
-
+  - "{{ hostvars['prysm-geth-4']['ethereum_node_fact_el_enode'] }}"
+  - "{{ hostvars['lodestar-geth-2']['ethereum_node_fact_el_enode'] }}"
+  - "{{ hostvars['lodestar-geth-4']['ethereum_node_fact_el_enode'] }}"
+  - "{{ hostvars['lodestar-geth-6']['ethereum_node_fact_el_enode'] }}"
 # role: ethpandaops.general.prometheus
 prometheus_remote_push_url: https://victoriametrics-public.analytics.production.platform.ethpandaops.io/insert/1/prometheus
 prometheus_remote_write_username: "{{ secret_prometheus_remote_write.username }}"

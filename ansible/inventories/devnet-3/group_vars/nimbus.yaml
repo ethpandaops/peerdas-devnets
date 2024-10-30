@@ -18,10 +18,12 @@ validator_bls_sync_files:
     dest: "{{ nimbus_validator_datadir }}/change_operations.json"
     owner: nimbus
     group: nimbus
-
+docker_network_ipam_config: []
+docker_network_enable_ipv6: false
+global_ipv6_enabled: false
 # role: ethpandaops.general.ethereum_node
 ethereum_node_cl: nimbus
-ethereum_node_cl_checkpoint_sync_enabled: true
+ethereum_node_cl_checkpoint_sync_enabled: false
 # Checkpointsync
 nimbus_checkpoint_autoremove_enabled: true
 nimbus_checkpoint_container_command_extra_args:
@@ -35,6 +37,8 @@ nimbus_container_env:
   VIRTUAL_HOST: "{{ ethereum_node_beacon_hostname }}"
   VIRTUAL_PORT: "{{ ethereum_node_cl_ports_http_beacon | string }}"
   LETSENCRYPT_HOST: "{{ ethereum_node_beacon_hostname }}"
+# nimbus_container_ports_ipv4:
+#   - "127.0.0.1:{{ nimbus_ports_http_beacon }}:{{ nimbus_ports_http_beacon }}"
 nimbus_container_volumes:
   - "{{ nimbus_datadir }}:/data"
   - "{{ nimbus_auth_jwt_path }}:/execution-auth.jwt:ro"
@@ -45,7 +49,7 @@ nimbus_container_command_extra_simple_args:
   - --network=/network-config
   - --validator-monitor-auto=false
   - --doppelganger-detection=off
-  - --log-level=DEBUG
+  #- --log-level=DEBUG
   - --light-client-data-serve=false
   - --graffiti={{ ansible_hostname }}
 nimbus_container_command_extra_bootnode_args: >-

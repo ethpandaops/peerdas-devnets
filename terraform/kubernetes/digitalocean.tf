@@ -39,10 +39,10 @@ resource "digitalocean_kubernetes_cluster" "peerdas" {
     name       = "${local.cluster_name}-default"
     size       = "s-8vcpu-16gb-amd" # $320/month,  list available options with `doctl compute size list`
     labels     = {}
-    node_count = 1
+    node_count = 3
     auto_scale = true
-    max_nodes  = 1
-    min_nodes  = 1
+    max_nodes  = 3
+    min_nodes  = 3
     tags       = concat(local.common_tags, ["default"])
   }
 }
