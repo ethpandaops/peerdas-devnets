@@ -4,6 +4,5 @@ sops 3.7.3
 terraform 1.6.4
 shellcheck 0.10.0
 python 3.12.4
-ansible-lint 6.17.2
 awscli 2.13.7
 yq 4.35.2
