@@ -1,3 +1,4 @@
+goomy_container_image: "{{ default_tooling_images.goomy }}"
 
 goomy_container_networks: "{{ docker_networks_shared }}"
 goomy_rpc_urls:

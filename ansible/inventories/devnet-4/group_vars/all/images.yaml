@@ -9,7 +9,7 @@ default_ethereum_client_images:
   grandine: docker.ethquokkaops.io/dh/ethpandaops/grandine:peerdas-fulu-42f5a82
 ### Execution layer clients
   besu: docker.ethquokkaops.io/dh/hyperledger/besu:latest
-  geth: docker.ethquokkaops.io/dh/ethereum/client-go:stable
+  geth: docker.ethquokkaops.io/dh/ethereum/client-go:latest
   erigon: docker.ethquokkaops.io/dh/thorax/erigon:devel
   ethereumjs: docker.ethquokkaops.io/dh/ethpandaops/ethereumjs:master
   nethermind: docker.ethquokkaops.io/dh/nethermindeth/nethermind:master
@@ -33,7 +33,8 @@ default_tooling_images:
   eth_fauceth: docker.ethquokkaops.io/dh/chainflag/eth-faucet:latest
   blobscan: docker.ethquokkaops.io/dh/blossomlabs/blobscan:latest
   blobscan_indexer: docker.ethquokkaops.io/dh/blossomlabs/blobscan-indexer:latest
-  dora: docker.ethquokkaops.io/dh/ethpandaops/dora:master-latest
+  dora: docker.ethquokkaops.io/dh/ethpandaops/dora:fulu-support
+  goomy: docker.ethquokkaops.io/dh/ethpandaops/goomy:latest
   dugtrio: docker.ethquokkaops.io/dh/ethpandaops/dugtrio:latest
   ethereum_genesis_generator: docker.ethquokkaops.io/dh/ethpandaops/ethereum-genesis-generator:3.7.0
   tracoor: docker.ethquokkaops.io/dh/ethpandaops/tracoor:0.0.26-debian
