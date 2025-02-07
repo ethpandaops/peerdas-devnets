@@ -34,7 +34,7 @@ default_tooling_images:
   blobscan: docker.ethquokkaops.io/dh/blossomlabs/blobscan:latest
   blobscan_indexer: docker.ethquokkaops.io/dh/blossomlabs/blobscan-indexer:latest
   dora: docker.ethquokkaops.io/dh/ethpandaops/dora:fulu-support
-  goomy: docker.ethquokkaops.io/dh/ethpandaops/goomy:latest
+  goomy: docker.ethquokkaops.io/dh/ethpandaops/goomy-blob:master
   dugtrio: docker.ethquokkaops.io/dh/ethpandaops/dugtrio:latest
   ethereum_genesis_generator: docker.ethquokkaops.io/dh/ethpandaops/ethereum-genesis-generator:3.7.0
   tracoor: docker.ethquokkaops.io/dh/ethpandaops/tracoor:0.0.26-debian
