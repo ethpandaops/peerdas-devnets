@@ -4,7 +4,7 @@ default_ethereum_client_images:
   lodestar: docker.ethquokkaops.io/dh/ethpandaops/lodestar:peerDAS-513bccc
   nimbus: docker.ethquokkaops.io/dh/ethpandaops/nimbus-eth2:columns-07ce6ef
   prysm: docker.ethquokkaops.io/dh/ethpandaops/prysm-beacon-chain:peerDAS-01705d1
-  prysm_validator: docker.ethquokkaops.io/dh/ethpandaops/prysm-validator:peerDAS-ae626d5
+  prysm_validator: docker.ethquokkaops.io/dh/ethpandaops/prysm-validator:peerDAS-01705d1
   teku: docker.ethquokkaops.io/dh/ethpandaops/teku:nashatyrev-das-7109573
   grandine: docker.ethquokkaops.io/dh/ethpandaops/grandine:peerdas-fulu-42f5a82
 ### Execution layer clients
