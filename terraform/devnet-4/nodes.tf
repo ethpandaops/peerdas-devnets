@@ -124,7 +124,7 @@ variable "prysm_reth" {
 variable "lodestar_geth" {
   default = {
     name            = "lodestar-geth"
-    count           = 0
+    count           = 1
     validator_start = 0
     validator_end   = 0
   }
