@@ -47,9 +47,6 @@ assertoor:
     - name:  grandine-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-geth-1.peerdas-devnet-4.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-geth-1.peerdas-devnet-4.ethpandaops.io
-    - name:  grandine-geth-2
-      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-geth-2.peerdas-devnet-4.ethpandaops.io
-      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-geth-2.peerdas-devnet-4.ethpandaops.io
     - name:  lighthouse-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-geth-1.peerdas-devnet-4.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-4.ethpandaops.io
@@ -65,6 +62,9 @@ assertoor:
     - name:  lighthouse-geth-5
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-geth-5.peerdas-devnet-4.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-5.peerdas-devnet-4.ethpandaops.io
+    - name:  lodestar-geth-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-1.peerdas-devnet-4.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-4.ethpandaops.io
     - name:  nimbus-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-1.peerdas-devnet-4.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-1.peerdas-devnet-4.ethpandaops.io
@@ -114,12 +114,12 @@ assertoor:
     clientPairNames:
       - bootnode-1
       - grandine-geth-1
-      - grandine-geth-2
       - lighthouse-geth-1
       - lighthouse-geth-2
       - lighthouse-geth-3
       - lighthouse-geth-4
       - lighthouse-geth-5
+      - lodestar-geth-1
       - nimbus-geth-1
       - nimbus-geth-2
       - nimbus-geth-3
@@ -136,11 +136,11 @@ assertoor:
       - teku-geth-5
     validatorPairNames:
       - grandine-geth-1
-      - grandine-geth-2
       - lighthouse-geth-2
       - lighthouse-geth-3
       - lighthouse-geth-4
       - lighthouse-geth-5
+      - lodestar-geth-1
       - nimbus-geth-1
       - nimbus-geth-2
       - nimbus-geth-3

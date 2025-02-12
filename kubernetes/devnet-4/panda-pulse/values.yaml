@@ -6,7 +6,7 @@ panda-pulse:
   image:
     repository: docker.ethquokkaops.io/dh/ethpandaops/panda-pulse
     tag: 0.0.10
-    pullPolicy: Always
+    pullPolicy: IfNotPresent
   schedule: "0 7 * * *"
 
   config:

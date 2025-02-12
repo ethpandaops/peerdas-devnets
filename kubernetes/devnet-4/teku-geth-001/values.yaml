@@ -29,6 +29,14 @@ teku-geth-001:
             ethereumjs:
           consensus:
             lodestar:
+              - --paramsFile=/data/network-config/config.yaml
+              - --genesisStateFile=/data/network-config/genesis.ssz
+              - --bootnodes=enr:-Iq4QFZgcUwSkbkvi__kKjaxC8JGEC3mL9aXfCXRsh1JvkQNBIubBHeHbDVAEAyn5RlylhEgKx98kbNVQeUhqLqoH1eGAZTf2v4-gmlkgnY0gmlwhES3GwuJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-OO4QDdAm75fhnT48z1ICiLNX1xL828hs51qGGXEgnGeNaI0UG5PU5-ng4TsDNtOH39AytGvclXNh4jFuE_-c_uWX9kDh2F0dG5ldHOIAAYAAAAAAACDY2djgYCGY2xpZW500YpMaWdodGhvdXNlhTYuMC4xhGV0aDKQLIoUQ2CXEJIBAAAAAAAAAIJpZIJ2NIJpcIREtxsLhHF1aWOCIymJc2VjcDI1NmsxoQLPg5FS_8dwTJpPPE86OEVOPFzNRunLqB_b1RUt7kfSlYhzeW5jbmV0cwCDdGNwgiMog3VkcIIjKA
+              - --rest.namespace="*"
+              - --network.connectToDiscv5Bootnodes
+              - --nat=true
+              - --persistNetworkIdentity
+              - --logLevel=debug
             teku:
               - --network=/data/network-config/config.yaml
               - --genesis-state=/data/network-config/genesis.ssz
@@ -73,8 +81,8 @@ teku-geth-001:
     enabled: true
     fullnameOverride: geth-teku-001
     image:
-      repository: docker.ethquokkaops.io/dh/ethereum/client-go
-      tag: latest
+      repository: docker.ethquokkaops.io/dh/ethpandaops/geth
+      tag: PeerDAS
       pullPolicy: Always
     p2pNodePort:
       enabled: true
@@ -131,7 +139,7 @@ teku-geth-001:
           - name: storage
             mountPath: "/data"
       - name: init-genesis
-        image: docker.ethquokkaops.io/dh/ethereum/client-go:latest
+        image: docker.ethquokkaops.io/dh/ethpandaops/geth:PeerDAS
         imagePullPolicy: Always
         securityContext:
           runAsNonRoot: false

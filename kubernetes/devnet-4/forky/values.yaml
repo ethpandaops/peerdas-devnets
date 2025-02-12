@@ -82,6 +82,11 @@ forky:
           config:
             address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-4.ethpandaops.io
             polling_interval: "12s"
+        - name: lodestar-geth-1
+          type: "beacon_node"
+          config:
+            address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-4.ethpandaops.io
+            polling_interval: "12s"
         - name: nimbus-geth-1
           type: "beacon_node"
           config:

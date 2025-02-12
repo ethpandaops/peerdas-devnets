@@ -125,8 +125,8 @@ variable "lodestar_geth" {
   default = {
     name            = "lodestar-geth"
     count           = 1
-    validator_start = 0
-    validator_end   = 0
+    validator_start = 2000
+    validator_end   = 2100
   }
 }
 
@@ -290,9 +290,9 @@ variable "teku_reth" {
 variable "grandine_geth" {
   default = {
     name            = "grandine-geth"
-    count           = 2
+    count           = 1
     validator_start = 1900
-    validator_end   = 2100
+    validator_end   = 2000
     ipv6            = false
   }
 }

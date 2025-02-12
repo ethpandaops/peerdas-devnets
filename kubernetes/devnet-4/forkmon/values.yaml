@@ -23,8 +23,6 @@ forkmon:
     name: bootnode-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-geth-1.peerdas-devnet-4.ethpandaops.io
     name: grandine-geth-1
-  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-geth-2.peerdas-devnet-4.ethpandaops.io
-    name: grandine-geth-2
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-geth-1.peerdas-devnet-4.ethpandaops.io
     name: lighthouse-geth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-geth-2.peerdas-devnet-4.ethpandaops.io
@@ -35,6 +33,8 @@ forkmon:
     name: lighthouse-geth-4
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-geth-5.peerdas-devnet-4.ethpandaops.io
     name: lighthouse-geth-5
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-1.peerdas-devnet-4.ethpandaops.io
+    name: lodestar-geth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-1.peerdas-devnet-4.ethpandaops.io
     name: nimbus-geth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-2.peerdas-devnet-4.ethpandaops.io

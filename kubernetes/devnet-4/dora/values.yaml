@@ -57,9 +57,6 @@ dora:
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-geth-1.peerdas-devnet-4.ethpandaops.io
     name: grandine-geth-1
     priority: -1
-  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-geth-2.peerdas-devnet-4.ethpandaops.io
-    name: grandine-geth-2
-    priority: -1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-4.ethpandaops.io
     name: lighthouse-geth-1
     priority: -1
@@ -80,6 +77,9 @@ dora:
     name: lighthouse-geth-5
     priority: -1
     archive: true
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-4.ethpandaops.io
+    name: lodestar-geth-1
+    priority: -1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-1.peerdas-devnet-4.ethpandaops.io
     name: nimbus-geth-1
     priority: -1
@@ -136,10 +136,6 @@ dora:
     name: grandine-geth-1
     priority: -1
     archive: false
-  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-geth-2.peerdas-devnet-4.ethpandaops.io
-    name: grandine-geth-2
-    priority: -1
-    archive: false
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-geth-1.peerdas-devnet-4.ethpandaops.io
     name: lighthouse-geth-1
     priority: -1
@@ -158,6 +154,10 @@ dora:
     archive: false
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-geth-5.peerdas-devnet-4.ethpandaops.io
     name: lighthouse-geth-5
+    priority: -1
+    archive: false
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-1.peerdas-devnet-4.ethpandaops.io
+    name: lodestar-geth-1
     priority: -1
     archive: false
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-1.peerdas-devnet-4.ethpandaops.io

@@ -57,6 +57,9 @@ checkpointz:
         - name: lighthouse-geth-1
           address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-4.ethpandaops.io
           dataProvider: true
+        - name: lodestar-geth-1
+          address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-4.ethpandaops.io
+          dataProvider: true
         - name: nimbus-geth-1
           address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-1.peerdas-devnet-4.ethpandaops.io
           dataProvider: true
