@@ -11,7 +11,7 @@ panda-pulse:
 
   config:
     network: "peerdas-devnet-4"
-    discordChannel: "1336250914461450300"
+    discordChannel: "1336250914461450300" # ethPandaOps: #devnet-pulse-checks
     ethereumCls:
       - lighthouse
       - lodestar
