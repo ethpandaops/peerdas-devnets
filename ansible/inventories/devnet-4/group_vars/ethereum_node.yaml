@@ -64,6 +64,7 @@ prometheus_config: |
           labels:
             instance: "{{ inventory_hostname }}"
     - job_name: "consensus_node"
+      scrape_interval: 12s
       metrics_path: "/metrics"
       static_configs:
         - targets: ["{{ vars[ethereum_node_cl + '_container_name'] }}:{{ ethereum_node_cl_ports_metrics }}"]
