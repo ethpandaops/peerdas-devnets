@@ -7,7 +7,7 @@ panda-pulse:
     repository: docker.ethquokkaops.io/dh/ethpandaops/panda-pulse
     tag: 0.0.10
     pullPolicy: IfNotPresent
-  schedule: "0 7 * * *"
+  schedule: "" # Disabled, now peerdas-devnet-5 is running.
 
   config:
     network: "peerdas-devnet-4"
