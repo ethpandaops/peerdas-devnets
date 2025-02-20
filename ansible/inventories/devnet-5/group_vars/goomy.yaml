@@ -1,0 +1,7 @@
+goomy_container_image: "{{ default_tooling_images.goomy }}"
+
+goomy_container_networks: "{{ docker_networks_shared }}"
+goomy_rpc_urls:
+  - "{% for host in groups['execution_node'] %}https://{{ secret_nginx_shared_basic_auth.name }}:{{ secret_nginx_shared_basic_auth.password }}@rpc.{{ host }}.{{ network_subdomain }},{% endfor %}"
+goomy_scenario: "combined"
+goomy_extra_args: ["--sidecars", "4", "--throughput", 10, "--max-pending", "40"]
