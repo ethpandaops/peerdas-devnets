@@ -65,6 +65,15 @@ assertoor:
     - name:  lodestar-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-1.peerdas-devnet-5.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-5.ethpandaops.io
+    - name:  lodestar-geth-2
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-2.peerdas-devnet-5.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-2.peerdas-devnet-5.ethpandaops.io
+    - name:  lodestar-geth-3
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-3.peerdas-devnet-5.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-3.peerdas-devnet-5.ethpandaops.io
+    - name:  lodestar-geth-4
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-4.peerdas-devnet-5.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-4.peerdas-devnet-5.ethpandaops.io
     - name:  nimbus-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-1.peerdas-devnet-5.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-1.peerdas-devnet-5.ethpandaops.io
@@ -120,6 +129,9 @@ assertoor:
       - lighthouse-geth-4
       - lighthouse-geth-5
       - lodestar-geth-1
+      - lodestar-geth-2
+      - lodestar-geth-3
+      - lodestar-geth-4
       - nimbus-geth-1
       - nimbus-geth-2
       - nimbus-geth-3
@@ -141,6 +153,9 @@ assertoor:
       - lighthouse-geth-4
       - lighthouse-geth-5
       - lodestar-geth-1
+      - lodestar-geth-2
+      - lodestar-geth-3
+      - lodestar-geth-4
       - nimbus-geth-1
       - nimbus-geth-2
       - nimbus-geth-3
