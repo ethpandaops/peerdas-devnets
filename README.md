@@ -1,5 +1,5 @@
 <div align="center"><img src="./docs/images/panda.png" width="300"/></div>
-<h2 align="center">🐼 ❤️.oO<br>"Pandas love erasure coding and more blob"</h2>
+<h2 align="center">🐼 ❤️.oO<br>"Pandas love erasure coding and more blobs"</h2>
 <h1 align="center">Infrastructure code for Dev/Testnets</h1>
 
 <p align="center">
