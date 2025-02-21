@@ -35,6 +35,12 @@ forkmon:
     name: lighthouse-geth-5
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-1.peerdas-devnet-5.ethpandaops.io
     name: lodestar-geth-1
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-2.peerdas-devnet-5.ethpandaops.io
+    name: lodestar-geth-2
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-3.peerdas-devnet-5.ethpandaops.io
+    name: lodestar-geth-3
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-4.peerdas-devnet-5.ethpandaops.io
+    name: lodestar-geth-4
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-1.peerdas-devnet-5.ethpandaops.io
     name: nimbus-geth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-2.peerdas-devnet-5.ethpandaops.io
