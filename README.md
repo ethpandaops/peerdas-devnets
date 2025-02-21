@@ -1,5 +1,5 @@
 <div align="center"><img src="./docs/images/panda.png" width="300"/></div>
-<h2 align="center">🐼 ❤️.oO<br>"Pandas love everything"</h2>
+<h2 align="center">🐼 ❤️.oO<br>"Pandas love erasure coding and more blob"</h2>
 <h1 align="center">Infrastructure code for Dev/Testnets</h1>
 
 <p align="center">
@@ -14,11 +14,12 @@ This repository contains the infrastructure code used to setup ~all~ dev/testnet
 
 Status   | Network    | Links   | Ansible                                                      | Terraform | Kubernetes
 ------   | --------   | ----     |  -----                                                       | -------   | ------
-Off🔴| [devnet-3](https://peerdas-devnet-3.ethpandaops.io)   | [Network config](network-configs/devnet-3) / [Inventory](https://bootnode-1.peerdas-devnet-3.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-3.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-3) | [🔗](terraform/devnet-3) | [🔗](kubernetes/devnet-3)
-Off🔴| [devnet-2](https://peerdas-devnet-2.ethpandaops.io)   | [Network config](network-configs/devnet-2) / [Inventory](https://bootnode-1.peerdas-devnet-2.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-2.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-2) | [🔗](terraform/devnet-2) | [🔗](kubernetes/devnet-2)
-Off🔴 | [devnet-1](https://peerdas-devnet-1.ethpandaops.io)   | [Network config](network-configs/devnet-1) / [Inventory](https://bootnode-1.peerdas-devnet-1.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-1.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-1) | [🔗](terraform/devnet-1) | [🔗](kubernetes/devnet-1)
-Off🔴 | [devnet-0](https://peerdas-devnet-0.ethpandaops.io)   | [Network config](network-configs/devnet-0) / [Inventory](https://bootnode-1.peerdas-devnet-0.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-0.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-0) | [🔗](terraform/devnet-0) | [🔗](kubernetes/devnet-0)
-
+🔴 | [devnet-0](https://peerdas-devnet-0.ethpandaops.io)   | [Network config](network-configs/devnet-0) / [Inventory](https://bootnode-1.peerdas-devnet-0.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-0.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-0) | [🔗](terraform/devnet-0) | [🔗](kubernetes/devnet-0)
+🔴 | [devnet-1](https://peerdas-devnet-1.ethpandaops.io)   | [Network config](network-configs/devnet-1) / [Inventory](https://bootnode-1.peerdas-devnet-1.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-1.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-1) | [🔗](terraform/devnet-1) | [🔗](kubernetes/devnet-1)
+🔴| [devnet-2](https://peerdas-devnet-2.ethpandaops.io)   | [Network config](network-configs/devnet-2) / [Inventory](https://bootnode-1.peerdas-devnet-2.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-2.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-2) | [🔗](terraform/devnet-2) | [🔗](kubernetes/devnet-2)
+🔴| [devnet-3](https://peerdas-devnet-3.ethpandaops.io)   | [Network config](network-configs/devnet-3) / [Inventory](https://bootnode-1.peerdas-devnet-3.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-3.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-3) | [🔗](terraform/devnet-3) | [🔗](kubernetes/devnet-3)
+🔴 | [devnet-4](https://peerdas-devnet-4.ethpandaops.io)   | [Network config](network-configs/devnet-4) / [Inventory](https://bootnode-1.peerdas-devnet-4.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-4.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-4) | [🔗](terraform/devnet-4) | [🔗](kubernetes/devnet-4)
+🟢 | [devnet-5](https://peerdas-devnet-5.ethpandaops.io)   | [Network config](network-configs/devnet-5) / [Inventory](https://bootnode-1.peerdas-devnet-5.ethpandaops.io/meta/api/v1/inventory.json) / [Validator ranges](https://bootnode-1.peerdas-devnet-5.ethpandaops.io/meta/api/v1/validator-ranges.json)    | [🔗](ansible/inventories/devnet-5) | [🔗](terraform/devnet-5) | [🔗](kubernetes/devnet-5)
 # Development
 ## Version management for tools
 
