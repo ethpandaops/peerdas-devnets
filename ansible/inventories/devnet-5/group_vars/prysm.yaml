@@ -51,7 +51,7 @@ prysm_container_command_extra_simple_args:
   - --enable-debug-rpc-endpoints
   - --verbosity=debug
   - --minimum-peers-per-subnet=1
-  - --subscribe-all-subnets
+
 
 prysm_container_command_extra_bootnode_args: >-
   {{ ethereum_cl_bootnodes | map('regex_replace', '^', '--bootstrap-node=') | list }}
