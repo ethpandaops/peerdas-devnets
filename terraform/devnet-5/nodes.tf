@@ -72,6 +72,7 @@ variable "prysm_geth" {
     validator_start = 500
     validator_end   = 1000
     ipv6            = false
+    size            = "s-4vcpu-8gb-240gb-intel"
   }
 }
 
@@ -294,6 +295,7 @@ variable "grandine_geth" {
     validator_start = 1900
     validator_end   = 2000
     ipv6            = false
+    size            = "s-4vcpu-8gb-240gb-intel"
   }
 }
 
