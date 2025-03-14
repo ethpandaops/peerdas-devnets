@@ -53,4 +53,6 @@ lighthouse_validator_container_command_extra_args:
   - --graffiti={{ ansible_hostname }}
 
 lighthouse_validator_datadir: /data/lighthouse-validator
+# TODO: REMOVE THIS AS ITS TEMPORARY
+lighthouse_validator_container_image: "{{ default_ethereum_client_images.lighthouse_validator }}"
 lighthouse_container_pull: true
