@@ -1,0 +1,8 @@
+lighthouse_container_command_extra_args:
+  - --testnet-dir=/network-config
+  - --boot-nodes={{ ethereum_cl_bootnodes | join(',') }}
+  - --allow-insecure-genesis-sync
+  - --malicious-withhold-count=64
+  - --delay-block-publishing=2
+  - --delay-data-column-publishing=2
+
