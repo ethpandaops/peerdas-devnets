@@ -291,7 +291,7 @@ variable "teku_reth" {
 variable "grandine_geth" {
   default = {
     name            = "grandine-geth"
-    count           = 1
+    count           = 2
     validator_start = 1900
     validator_end   = 2000
     ipv6            = false
