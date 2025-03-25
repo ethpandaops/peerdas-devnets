@@ -4,10 +4,10 @@ default_ethereum_client_images:
   lighthouse_validator: docker.ethquokkaops.io/dh/ethpandaops/lighthouse:peerdas-devnet-4-8a77252
   lodestar: docker.ethquokkaops.io/dh/ethpandaops/lodestar:peerDAS-3e0a08f
   nimbus: docker.ethquokkaops.io/dh/ethpandaops/nimbus-eth2:columns-22b62d2
-  prysm: docker.ethquokkaops.io/dh/ethpandaops/prysm-beacon-chain:peerDAS-01705d1
-  prysm_validator: docker.ethquokkaops.io/dh/ethpandaops/prysm-validator:peerDAS-01705d1
+  prysm: docker.ethquokkaops.io/dh/ethpandaops/prysm-beacon-chain:data-columns-storage-1039f5b
+  prysm_validator: docker.ethquokkaops.io/dh/ethpandaops/prysm-validator:data-columns-storage-1039f5b
   teku: docker.ethquokkaops.io/dh/ethpandaops/teku:nashatyrev-das-7109573
-  grandine: docker.ethquokkaops.io/dh/ethpandaops/grandine:hangleang-peerdas-fulu-696bfff
+  grandine: docker.ethquokkaops.io/dh/ethpandaops/grandine:hangleang-peerdas-fulu-e451806
 ### Execution layer clients
   besu: docker.ethquokkaops.io/dh/hyperledger/besu:latest
   geth: docker.ethquokkaops.io/dh/ethpandaops/geth:PeerDAS-7f6090b
