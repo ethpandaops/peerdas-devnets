@@ -1,0 +1,4 @@
+default_ethereum_client_images:
+  lighthouse: docker.ethquokkaops.io/dh/ethpandaops/lighthouse:unstable-6f31d44
+  lighthouse_validator: docker.ethquokkaops.io/dh/ethpandaops/lighthouse:peerdas-devnet-5-a1b1d7a
+  geth: docker.ethquokkaops.io/dh/ethpandaops/geth:PeerDAS-7f6090b

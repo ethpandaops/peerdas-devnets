@@ -128,6 +128,7 @@ variable "lodestar_geth" {
     count           = 4
     validator_start = 2000
     validator_end   = 2100
+    size            = "s-4vcpu-8gb-240gb-intel"
   }
 }
 
@@ -240,6 +241,7 @@ variable "teku_geth" {
     validator_start = 1400
     validator_end   = 1900
     ipv6            = false
+    size            = "s-4vcpu-8gb-240gb-intel"
   }
 }
 
