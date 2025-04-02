@@ -1,4 +1,12 @@
 default_ethereum_client_images:
-  lighthouse: docker.ethquokkaops.io/dh/ethpandaops/lighthouse:unstable-6f31d44
-  lighthouse_validator: docker.ethquokkaops.io/dh/ethpandaops/lighthouse:peerdas-devnet-5-a1b1d7a
+  lighthouse: docker.ethquokkaops.io/dh/ethpandaops/lighthouse:peerdas-devnet-5-4839ed6
+  lighthouse_validator: docker.ethquokkaops.io/dh/ethpandaops/lighthouse:peerdas-devnet-5-4839ed6
   geth: docker.ethquokkaops.io/dh/ethpandaops/geth:PeerDAS-7f6090b
+
+checkpoint_sync_node: lighthouse-geth-1
+ethereum_node_cl_checkpoint_sync_enabled: true
+checkpoint_sync_url: https://{{ secret_nginx_shared_basic_auth.name }}:{{ secret_nginx_shared_basic_auth.password }}@bn.{{ checkpoint_sync_node }}.{{ ethereum_network_name }}.{{ domain }}
+
+lighthouse_container_command_extra_args:
+  - --testnet-dir=/network-config
+  - --boot-nodes={{ ethereum_cl_bootnodes | join(',') }}
