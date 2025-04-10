@@ -10,7 +10,7 @@ lighthouse-geth-001:
     checkpointSync:
       enabled: false
       addresses:
-        peerdas-devnet-6: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-6.ethpandaops.ios
+        peerdas-devnet-6: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-6.ethpandaops.io
     clientArgs:
       networks:
         peerdas-devnet-6:
@@ -187,6 +187,8 @@ lighthouse-geth-001:
   lighthouse:
     checkpointSync:
       enabled: false
+      addresses:
+        peerdas-devnet-6: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-6.ethpandaops.io
     enabled: true
     fullnameOverride: lighthouse-geth-001
     image:
