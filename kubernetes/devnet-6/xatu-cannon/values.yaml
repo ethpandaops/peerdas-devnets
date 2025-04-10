@@ -2,7 +2,7 @@ xatu-cannon:
   enabled: true
   fullnameOverride: xatu-cannon
   image:
-    repository: docker.ethquokkaops.io/dh/ethpandaops/xatu-cannon
+    repository: docker.ethquokkaops.io/dh/ethpandaops/xatu
     tag: latest
     pullPolicy: Always
   resources:
