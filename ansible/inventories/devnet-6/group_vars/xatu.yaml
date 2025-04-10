@@ -34,6 +34,8 @@ xatu_sentry_config:
     enabled: false
   beaconCommittees:
     enabled: false
+  proposerDuty:
+    enabled: true
   forkChoice:
     enabled: false
   outputs:
@@ -74,7 +76,7 @@ xatu_sentry_config:
       headers:
         authorization: "Basic {{ (xatu_sentry_config_server_auth_user + ':' + xatu_sentry_config_server_auth_password) | b64encode }}"
       maxExportBatchSize: 128
-      maxQueueSize: 1000000
+      maxQueueSize: 100000
       workers: 10
       tls: true
     filter:
