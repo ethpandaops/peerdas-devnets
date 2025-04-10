@@ -93,8 +93,8 @@ xatu-cannon:
     tracing:
       enabled: false
     ethereum:
-          beaconNodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@beacon.bootnode-1.peerdas-devnet-6.ethpandaops.io
-          beaconNodeHeaders: {} #FILL_ME
+      beaconNodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@beacon.bootnode-1.peerdas-devnet-6.ethpandaops.io
+      beaconNodeHeaders: {}
       blockCacheSize: 300
       blockCacheTtl: 1h
       blockPreloadWorkers: 50
