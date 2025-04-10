@@ -1,12 +1,12 @@
 # Ansible managed. Don't change this file manually. Template info: /vendor/collections/ansible_collections/ethpandaops/general/roles/generate_kubernetes_config/templates/ethereum-node.yaml.j2
 
-teku-geth-001:
+lighthouse-geth-001:
   global:
     main:
       network: peerdas-devnet-6
-      engineEndpoint: http://geth-teku-001:8551
-      rpcEndpoint: http://geth-teku-001:8545
-      beaconEndpoint: http://teku-geth-001:5052
+      engineEndpoint: http://geth-lighthouse-001:8551
+      rpcEndpoint: http://geth-lighthouse-001:8545
+      beaconEndpoint: http://lighthouse-geth-001:5052
     checkpointSync:
       enabled: false
       addresses:
@@ -59,14 +59,14 @@ teku-geth-001:
             lodestar:
               - --paramsFile=/data/network-config/config.yaml
               - --genesisStateFile=/data/network-config/genesis.ssz
-              - --bootnodes=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QJ-eLLAuLp_MN5kpH6ZElhJp2Blix282jvzws5_x9jAldc_oAisO9mY-YwP_4BjrJo9JiV2KU411vdgvT91fIawDh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykHdklX9wYShEAwAAAAAAAACCaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --bootnodes=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QB-9Mxixo0_BoWpRwJ3u0Fmzf751lkfezRmZ95yf2KmsfI27wob1D5K27LuwKn7oNkB-5tjoY2DbqvjT_45UwWAEh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykJ3EfMZwYShE__________-CaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
               - --rest.namespace="*"
               - --network.connectToDiscv5Bootnodes
               - --nat=true
             teku:
               - --network=/data/network-config/config.yaml
               - --genesis-state=/data/network-config/genesis.ssz
-              - --p2p-discovery-bootnodes=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QJ-eLLAuLp_MN5kpH6ZElhJp2Blix282jvzws5_x9jAldc_oAisO9mY-YwP_4BjrJo9JiV2KU411vdgvT91fIawDh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykHdklX9wYShEAwAAAAAAAACCaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --p2p-discovery-bootnodes=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QB-9Mxixo0_BoWpRwJ3u0Fmzf751lkfezRmZ95yf2KmsfI27wob1D5K27LuwKn7oNkB-5tjoY2DbqvjT_45UwWAEh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykJ3EfMZwYShE__________-CaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
               - --p2p-peer-upper-bound=100
               - --data-storage-non-canonical-blocks-enabled=true
               - --data-storage-mode=PRUNE
@@ -86,10 +86,10 @@ teku-geth-001:
               - --verbosity=debug
               - --subscribe-all-subnets
               - --bootstrap-node=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI
-              - --bootstrap-node=enr:-Oq4QJ-eLLAuLp_MN5kpH6ZElhJp2Blix282jvzws5_x9jAldc_oAisO9mY-YwP_4BjrJo9JiV2KU411vdgvT91fIawDh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykHdklX9wYShEAwAAAAAAAACCaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --bootstrap-node=enr:-Oq4QB-9Mxixo0_BoWpRwJ3u0Fmzf751lkfezRmZ95yf2KmsfI27wob1D5K27LuwKn7oNkB-5tjoY2DbqvjT_45UwWAEh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykJ3EfMZwYShE__________-CaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
             lighthouse:
               - --testnet-dir=/data/network-config
-              - --boot-nodes=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QJ-eLLAuLp_MN5kpH6ZElhJp2Blix282jvzws5_x9jAldc_oAisO9mY-YwP_4BjrJo9JiV2KU411vdgvT91fIawDh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykHdklX9wYShEAwAAAAAAAACCaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --boot-nodes=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QB-9Mxixo0_BoWpRwJ3u0Fmzf751lkfezRmZ95yf2KmsfI27wob1D5K27LuwKn7oNkB-5tjoY2DbqvjT_45UwWAEh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykJ3EfMZwYShE__________-CaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
               - --allow-insecure-genesis-sync
             nimbus:
               - --network=/data/network-config
@@ -98,12 +98,12 @@ teku-geth-001:
               - --log-level=INFO
               - --light-client-data-serve=false
               - --bootstrap-node=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI
-              - --bootstrap-node=enr:-Oq4QJ-eLLAuLp_MN5kpH6ZElhJp2Blix282jvzws5_x9jAldc_oAisO9mY-YwP_4BjrJo9JiV2KU411vdgvT91fIawDh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykHdklX9wYShEAwAAAAAAAACCaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --bootstrap-node=enr:-Oq4QB-9Mxixo0_BoWpRwJ3u0Fmzf751lkfezRmZ95yf2KmsfI27wob1D5K27LuwKn7oNkB-5tjoY2DbqvjT_45UwWAEh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykJ3EfMZwYShE__________-CaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
 
 
   geth:
     enabled: true
-    fullnameOverride: geth-teku-001
+    fullnameOverride: geth-lighthouse-001
     image:
       repository: docker.ethquokkaops.io/dh/ethpandaops/geth
       tag: marius-engine-getblobs-v2
@@ -119,9 +119,9 @@ teku-geth-001:
       testnet: peerdas-devnet-6
       ethereum_network: peerdas-devnet-6
       ethereum_role: execution
-      consensus_client: teku
+      consensus_client: lighthouse
       execution_client: geth
-      ethereum_instance: geth-teku-001
+      ethereum_instance: geth-lighthouse-001
     resources:
       requests:
         cpu: 2000m
@@ -184,12 +184,12 @@ teku-geth-001:
           - name: storage
             mountPath: "/data"
 
-  teku:
+  lighthouse:
     enabled: true
-    fullnameOverride: teku-geth-001
+    fullnameOverride: lighthouse-geth-001
     image:
-      repository: docker.ethquokkaops.io/dh/ethpandaops/teku
-      tag: nashatyrev-das-7109573
+      repository: docker.ethquokkaops.io/dh/ethpandaops/lighthouse
+      tag: peerdas-devnet-6
       pullPolicy: Always
     mode: "beacon"
     p2pNodePort:
@@ -200,9 +200,9 @@ teku-geth-001:
       testnet: peerdas-devnet-6
       ethereum_network: peerdas-devnet-6
       ethereum_role: consensus
-      consensus_client: teku
+      consensus_client: lighthouse
       execution_client: geth
-      ethereum_instance: teku-geth-001
+      ethereum_instance: lighthouse-geth-001
     resources:
       requests:
         cpu: 2000m

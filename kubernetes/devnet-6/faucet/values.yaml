@@ -30,7 +30,7 @@ powfaucet:
 
   faucetTitle: "peerdas-devnet-6 PoW Faucet"
   faucetPrivkey: "<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.faucet_private_key}>"
-  faucetRpcUrl: "http://geth-teku-001:8545"
+  faucetRpcUrl: "http://geth-lighthouse-001:8545"
   faucetExplorerLink: "https://explorer.peerdas-devnet-6.ethpandaops.io/tx/{txid}"
   faucetTxGasLimit: 100000
 

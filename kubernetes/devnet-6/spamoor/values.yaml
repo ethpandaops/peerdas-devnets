@@ -28,7 +28,7 @@ spamoor:
   privateKey: "<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.spamoor_private_key}>"
   rpcEndpoints:
   # Rpc
-  - "http://geth-teku-001:8545"
+  - "http://geth-lighthouse-001:8545"
   - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.bootnode-1.peerdas-devnet-6.ethpandaops.io"
   - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-geth-1.peerdas-devnet-6.ethpandaops.io"
   - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-geth-2.peerdas-devnet-6.ethpandaops.io"

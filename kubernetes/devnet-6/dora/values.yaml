@@ -47,8 +47,8 @@ dora:
 
   endpoints:
   # Rpc
-  - url: http://teku-geth-001:5052
-    name: rpc-teku-geth-001
+  - url: http://lighthouse-geth-001:5052
+    name: rpc-lighthouse-geth-001
     archive: true
     priority: 1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.bootnode-1.peerdas-devnet-6.ethpandaops.io
@@ -299,8 +299,8 @@ dora:
     priority: -1
   executionEndpoints:
   # Rpc
-  - url: http://geth-teku-001:8545
-    name: rpc-teku-geth-001
+  - url: http://geth-lighthouse-001:8545
+    name: rpc-lighthouse-geth-001
     archive: true
     priority: 1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.bootnode-1.peerdas-devnet-6.ethpandaops.io

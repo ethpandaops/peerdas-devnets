@@ -45,8 +45,8 @@ checkpointz:
 
     beacon:
       upstreams:
-        - name: rpc-teku-geth-001
-          address: http://teku-geth-001:5052
+        - name: rpc-lighthouse-geth-001
+          address: http://lighthouse-geth-001:5052
           dataProvider: true
         - name: bootnode-1
           address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.bootnode-1.peerdas-devnet-6.ethpandaops.io
