@@ -22,6 +22,7 @@ xatu_sentry_config:
     beaconNodeAddress: "{{ vars[ethereum_node_cl + '_container_name'] }}:{{ethereum_node_cl_ports_http_beacon}}"
     overrideNetworkName: "{{ xatu_sentry_config_network_name_override }}"
     beaconSubscriptions:
+    - single_attestation
     - attestation
     - block
     - chain_reorg
