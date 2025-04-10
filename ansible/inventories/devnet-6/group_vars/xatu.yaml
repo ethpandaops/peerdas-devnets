@@ -45,7 +45,7 @@ xatu_sentry_config:
       headers:
         authorization: "Basic {{ (xatu_sentry_config_server_auth_user + ':' + xatu_sentry_config_server_auth_password) | b64encode }}"
       maxExportBatchSize: 32
-      maxQueueSize: 1000000
+      maxQueueSize: 10000
       workers: 5
       tls: true
     filter:
@@ -77,7 +77,7 @@ xatu_sentry_config:
       headers:
         authorization: "Basic {{ (xatu_sentry_config_server_auth_user + ':' + xatu_sentry_config_server_auth_password) | b64encode }}"
       maxExportBatchSize: 128
-      maxQueueSize: 100000
+      maxQueueSize: 10000
       workers: 10
       tls: true
     filter:
