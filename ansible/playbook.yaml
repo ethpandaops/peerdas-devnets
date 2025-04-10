@@ -109,6 +109,12 @@
         tx_fuzz_container_command: "{{ tx_fuzz_txs_container_command }}"
         tx_fuzz_container_image: "{{ tx_fuzz_txs_container_image }}"
 
+- hosts: xatu
+  become: true
+  roles:
+    - role: ethpandaops.general.xatu_sentry
+      tags: [xatu_sentry, xatu]
+
 - hosts: bootnode
   become: true
   roles:
