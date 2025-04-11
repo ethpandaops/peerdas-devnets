@@ -2,11 +2,11 @@ default_ethereum_client_images:
 ### Consensus layer clients
   lighthouse: docker.ethquokkaops.io/dh/ethpandaops/lighthouse:peerdas-devnet-6
   lodestar: docker.ethquokkaops.io/dh/ethpandaops/lodestar:peerDAS-3e0a08f
-  nimbus: docker.ethquokkaops.io/dh/ethpandaops/nimbus-eth2:getBlobsV2-84a55a312
+  nimbus: docker.ethquokkaops.io/dh/ethpandaops/nimbus-eth2:getBlobsV2-339866e99
   prysm: docker.ethquokkaops.io/dh/ethpandaops/prysm-beacon-chain:peerdas-devnet-6
   prysm_validator: docker.ethquokkaops.io/dh/ethpandaops/prysm-validator:peerdas-devnet-6
   teku: docker.ethquokkaops.io/dh/ethpandaops/teku:nashatyrev-das-7109573
-  grandine: docker.ethquokkaops.io/dh/ethpandaops/grandine:hangleang-peerdas-devnet-6
+  grandine: docker.ethquokkaops.io/dh/ethpandaops/grandine:hangleang-peerdas-devnet-6-min-stack-4c26e92
 ### Execution layer clients
   besu: docker.ethquokkaops.io/dh/hyperledger/besu:latest
   geth: docker.ethquokkaops.io/dh/ethpandaops/geth:marius-engine-getblobs-v2

@@ -106,6 +106,19 @@ bootstrap_default_user_authorized_keys_github_all:
   - skylenet
   - pk910
   - mattevans
+  - g11tech
+  - mariusVanDerWijden
+  - hangleang
+  - sauliusgrigaitis
+  - dapplion
+  - jimmygchen
+  - ethdreamer
+  - paulhauner
+  - nflaig
+  - agnxsh
+  - tersec
+  - nalepae
+  - rkapka
 
 bootstrap_default_user_authorized_keys_github: >
   {{
