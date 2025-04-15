@@ -8,9 +8,9 @@ lighthouse-geth-001:
       rpcEndpoint: http://geth-lighthouse-001:8545
       beaconEndpoint: http://lighthouse-geth-001:5052
     checkpointSync:
-      enabled: false
+      enabled: true
       addresses:
-        peerdas-devnet-6: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-6.ethpandaops.io
+        peerdas-devnet-6: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-3.peerdas-devnet-6.ethpandaops.io
     clientArgs:
       networks:
         peerdas-devnet-6:
@@ -94,7 +94,7 @@ lighthouse-geth-001:
               - --network=/data/network-config
               - --validator-monitor-auto=false
               - --doppelganger-detection=off
-              - --log-level=INFO
+              - --log-level=DEBUG
               - --light-client-data-serve=false
               - --bootstrap-node=enr:-Iq4QOXsVWu6ocKCsQaVAzD3hG5_r6kCwACqGe115PTrlXX-ZqqQOM9cApd0IW5XtrXqjibTowJEgmY8EjbrEEPukauGAZYbCazVgmlkgnY0gmlwhI5dOOWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI
               - --bootstrap-node=enr:-Oq4QB-9Mxixo0_BoWpRwJ3u0Fmzf751lkfezRmZ95yf2KmsfI27wob1D5K27LuwKn7oNkB-5tjoY2DbqvjT_45UwWAEh2F0dG5ldHOIAAAAAAAAwACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykJ3EfMZwYShE__________-CaWSCdjSCaXCEjl045YRxdWljgiMpiXNlY3AyNTZrMaEC8b9QHcrqt_n3EAKK7Cg72GrzOtf1inAf43qZ0X3bvuCIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
@@ -185,9 +185,9 @@ lighthouse-geth-001:
 
   lighthouse:
     checkpointSync:
-      enabled: false
+      enabled: true
       addresses:
-        peerdas-devnet-6: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-6.ethpandaops.io
+        peerdas-devnet-6: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-3.peerdas-devnet-6.ethpandaops.io
     enabled: true
     fullnameOverride: lighthouse-geth-001
     image:

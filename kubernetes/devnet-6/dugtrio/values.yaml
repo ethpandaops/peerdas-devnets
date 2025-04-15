@@ -105,6 +105,18 @@ dugtrio:
     name: lighthouse-reth-8
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-reth-9.peerdas-devnet-6.ethpandaops.io
     name: lighthouse-reth-9
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-geth-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-geth-2
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-nethermind-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-nethermind-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-nethermind-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-nethermind-2
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-reth-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-reth-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-reth-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-reth-2
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-1.peerdas-devnet-6.ethpandaops.io
     name: nimbus-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-2.peerdas-devnet-6.ethpandaops.io

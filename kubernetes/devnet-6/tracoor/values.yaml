@@ -155,6 +155,36 @@ tracoor-single:
             traceDisableMemory: true
             traceDisableStack: true
             traceDisableStorage: true
+      - name: lodestar-geth-1
+        ethereum:
+          overrideNetworkName: peerdas-devnet-6
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-6.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-1.peerdas-devnet-6.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
+      - name: lodestar-nethermind-1
+        ethereum:
+          overrideNetworkName: peerdas-devnet-6
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-nethermind-1.peerdas-devnet-6.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-nethermind-1.peerdas-devnet-6.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
+      - name: lodestar-reth-1
+        ethereum:
+          overrideNetworkName: peerdas-devnet-6
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-reth-1.peerdas-devnet-6.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-reth-1.peerdas-devnet-6.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
       - name: nimbus-geth-1
         ethereum:
           overrideNetworkName: peerdas-devnet-6

@@ -122,7 +122,7 @@ variable "prysm_reth" {
 variable "lodestar_geth" {
   default = {
     name            = "lodestar-geth"
-    count           = 0
+    count           = 2
     validator_start = 0
     validator_end   = 0
   }
@@ -131,7 +131,7 @@ variable "lodestar_geth" {
 variable "lodestar_nethermind" {
   default = {
     name            = "lodestar-nethermind"
-    count           = 0
+    count           = 2
     validator_start = 0
     validator_end   = 0
   }
@@ -167,7 +167,7 @@ variable "lodestar_erigon" {
 variable "lodestar_reth" {
   default = {
     name            = "lodestar-reth"
-    count           = 0
+    count           = 2
     validator_start = 0
     validator_end   = 0
   }

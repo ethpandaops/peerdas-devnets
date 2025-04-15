@@ -189,6 +189,24 @@ dora:
     name: lighthouse-reth-9
     priority: -1
     archive: true
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-geth-1
+    priority: -1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-geth-2
+    priority: -1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-nethermind-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-nethermind-1
+    priority: -1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-nethermind-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-nethermind-2
+    priority: -1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-reth-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-reth-1
+    priority: -1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-reth-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-reth-2
+    priority: -1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-1.peerdas-devnet-6.ethpandaops.io
     name: nimbus-geth-1
     priority: -1
@@ -449,6 +467,30 @@ dora:
     archive: false
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-reth-9.peerdas-devnet-6.ethpandaops.io
     name: lighthouse-reth-9
+    priority: -1
+    archive: false
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-geth-1
+    priority: -1
+    archive: false
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-geth-2
+    priority: -1
+    archive: false
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-nethermind-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-nethermind-1
+    priority: -1
+    archive: false
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-nethermind-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-nethermind-2
+    priority: -1
+    archive: false
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-reth-1.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-reth-1
+    priority: -1
+    archive: false
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-reth-2.peerdas-devnet-6.ethpandaops.io
+    name: lodestar-reth-2
     priority: -1
     archive: false
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-1.peerdas-devnet-6.ethpandaops.io
