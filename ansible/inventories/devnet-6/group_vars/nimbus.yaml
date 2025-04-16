@@ -53,3 +53,5 @@ nimbus_validator_datadir: /data/nimbus-validator
 nimbus_container_validator_volumes:
   - "{{ nimbus_validator_datadir }}:/validator-data"
 nimbus_container_pull: true
+
+ethereum_node_cl_checkpoint_sync_enabled: false
