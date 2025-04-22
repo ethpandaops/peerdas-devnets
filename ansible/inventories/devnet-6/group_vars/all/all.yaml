@@ -217,7 +217,7 @@ vector_config: |
       "nginx-proxy",
       "node_exporter",
       "prometheus",
-      "snooper-",
+      # "snooper-",
     ]
 
   [sinks.out]
