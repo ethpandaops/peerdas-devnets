@@ -28,7 +28,7 @@ lighthouse_container_volumes:
   - "{{ eth_testnet_config_dir }}:/network-config:ro"
 lighthouse_container_command_extra_args:
   - --testnet-dir=/network-config
-  - --allow-insecure-genesis-sync
+  - --boot-nodes=enr:-Om4QF7K4J4xRn7oR9Wb_1phInaoAlAF0KkmKaYUBHl85XwmKeIbRlmNwStwOzVe5H7BQBA3Ir2O5k3-mrBsoXfQj6pCh2F0dG5ldHOIAAAAAGAAAACDY2djBIZjbGllbnTYikxpZ2h0aG91c2WMNy4xLjAtYmV0YS4whGV0aDKQncR8xnBhKET__________4JpZIJ2NIJpcISYKoSChHF1aWOCIymJc2VjcDI1NmsxoQO47iRfTwObQAe2DIy7cOsHZJTbudoahrxs7mYqe51j2ohzeW5jbmV0cw2DdGNwgiMog3VkcIIjKA
 
 
 # role: ethpandaops.general.geth
@@ -43,6 +43,7 @@ geth_container_command_extra_args:
   - --http.vhosts=*
   - --networkid={{ ethereum_network_id }}
   - --syncmode=full
+  - --bootnodes=enode://dd6fedacae5d93335a964b3157482598cd512c2283c9e22b9dbfd89e528541ebd37c1e40e06b909b45543bbed0bc698ac7ae8dd3ecfa65346fae465775ac287c@152.42.132.130:30303
 geth_init_custom_network: true
 geth_init_custom_network_genesis_file: "{{ eth_testnet_config_dir }}/genesis.json"
 geth_container_pull: true
