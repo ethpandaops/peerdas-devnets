@@ -1,0 +1,6 @@
+dependencies:
+- name: ethereum-node
+  repository: https://ethpandaops.github.io/ethereum-helm-charts
+  version: 0.0.27
+digest: sha256:a2c933d0b45f0436a661c3aafd2b6817b4282b58af8e7d5235cfd4c1866cb13f
+generated: "2025-05-09T14:09:55.851615+02:00"
