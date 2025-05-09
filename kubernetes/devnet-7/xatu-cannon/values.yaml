@@ -94,6 +94,7 @@ xatu-cannon:
       enabled: false
     ethereum:
       beaconNodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.bootnode-1.peerdas-devnet-7.ethpandaops.io
+      overrideNetworkName: peerdas-devnet-7
       beaconNodeHeaders: {}
       blockCacheSize: 300
       blockCacheTtl: 1h
