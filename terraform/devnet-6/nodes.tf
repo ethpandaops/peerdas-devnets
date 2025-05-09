@@ -5,7 +5,7 @@ variable "bootnode" {
     count           = 1
     validator_start = 0
     validator_end   = 0
-    size = "s-4vcpu-16gb-320gb-intel"
+    size            = "s-4vcpu-16gb-320gb-intel"
   }
 }
 
@@ -16,7 +16,7 @@ variable "lighthouse_geth" {
     count           = 9
     validator_start = 0
     validator_end   = 900
-    size = "s-4vcpu-16gb-320gb-intel"
+    size            = "s-4vcpu-16gb-320gb-intel"
   }
 }
 
