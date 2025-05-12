@@ -4,7 +4,7 @@ spamoor:
   fullnameOverride: spamoor
   image:
     repository: docker.ethquokkaops.io/dh/ethpandaops/spamoor
-    tag: blob-v1-latest
+    tag: latest
     pullPolicy: Always
   resources:
     requests:
@@ -21,6 +21,9 @@ spamoor:
         paths:
           - path: /
             pathType: Prefix
+
+  customArgs:
+    - --fulu-activation=1747042500
 
   persistence:
     enabled: true
