@@ -191,7 +191,7 @@ lighthouse-geth-001:
     fullnameOverride: lighthouse-geth-001
     image:
       repository: docker.ethquokkaops.io/dh/ethpandaops/lighthouse
-      tag: peerdas-devnet-7-4de1a73
+      tag: unstable-5933901
       pullPolicy: Always
     mode: "beacon"
     p2pNodePort:
