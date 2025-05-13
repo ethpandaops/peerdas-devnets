@@ -17,7 +17,7 @@ default_ethereum_client_images:
 
 
 default_tooling_images:
-  xatu_sentry: docker.ethquokkaops.io/dh/ethpandaops/xatu:latest
+  xatu_sentry: docker.ethquokkaops.io/dh/ethpandaops/xatu:0.0.1-fulu
   ethereum_metrics_exporter: docker.ethquokkaops.io/dh/ethpandaops/ethereum-metrics-exporter:latest
   tx_fuzz: docker.ethquokkaops.io/dh/ethpandaops/tx-fuzz:pr-56
   forkmon: docker.ethquokkaops.io/dh/skylenet/nodemonitor:darkmode
@@ -52,4 +52,4 @@ default_tooling_images:
   nginx_proxy_acme: docker.ethquokkaops.io/dh/nginxproxy/acme-companion
   vector: docker.ethquokkaops.io/dh/timberio/vector:0.46.1-alpine
   spamoor: docker.ethquokkaops.io/dh/ethpandaops/spamoor:master
-  xatu_cannon: docker.ethquokkaops.io/dh/ethpandaops/xatu:latest
+  xatu_cannon: docker.ethquokkaops.io/dh/ethpandaops/xatu:0.0.1-fulu
