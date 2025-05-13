@@ -33,7 +33,7 @@ default_tooling_images:
   eth_fauceth: docker.ethquokkaops.io/dh/chainflag/eth-faucet:latest
   blobscan: docker.ethquokkaops.io/dh/blossomlabs/blobscan:latest
   blobscan_indexer: docker.ethquokkaops.io/dh/blossomlabs/blobscan-indexer:latest
-  dora: docker.ethquokkaops.io/dh/ethpandaops/dora:fulu-support
+  dora: docker.ethquokkaops.io/dh/ethpandaops/dora:fulu-support-latest
   goomy: docker.ethquokkaops.io/dh/ethpandaops/goomy-blob:master
   dugtrio: docker.ethquokkaops.io/dh/ethpandaops/dugtrio:latest
   ethereum_genesis_generator: docker.ethquokkaops.io/dh/ethpandaops/ethereum-genesis-generator:4.0.5
