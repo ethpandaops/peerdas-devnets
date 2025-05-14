@@ -17,7 +17,7 @@ default_ethereum_client_images:
 
 
 default_tooling_images:
-  xatu_sentry: docker.ethquokkaops.io/dh/ethpandaops/xatu:0.0.1-fulu
+  xatu_sentry: docker.ethquokkaops.io/dh/ethpandaops/xatu:0.0.2-fulu
   ethereum_metrics_exporter: docker.ethquokkaops.io/dh/ethpandaops/ethereum-metrics-exporter:latest
   tx_fuzz: docker.ethquokkaops.io/dh/ethpandaops/tx-fuzz:pr-56
   forkmon: docker.ethquokkaops.io/dh/skylenet/nodemonitor:darkmode
