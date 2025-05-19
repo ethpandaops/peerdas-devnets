@@ -72,6 +72,11 @@ forky:
           config:
             address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.bootnode-1.peerdas-devnet-7.ethpandaops.io
             polling_interval: "12s"
+        - name: grandine-besu-1
+          type: "beacon_node"
+          config:
+            address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-besu-1.peerdas-devnet-7.ethpandaops.io
+            polling_interval: "12s"
         - name: grandine-geth-1
           type: "beacon_node"
           config:
@@ -86,6 +91,11 @@ forky:
           type: "beacon_node"
           config:
             address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-reth-1.peerdas-devnet-7.ethpandaops.io
+            polling_interval: "12s"
+        - name: lighthouse-besu-1
+          type: "beacon_node"
+          config:
+            address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-besu-1.peerdas-devnet-7.ethpandaops.io
             polling_interval: "12s"
         - name: lighthouse-geth-1
           type: "beacon_node"
@@ -102,6 +112,11 @@ forky:
           config:
             address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-reth-1.peerdas-devnet-7.ethpandaops.io
             polling_interval: "12s"
+        - name: lodestar-besu-1
+          type: "beacon_node"
+          config:
+            address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-besu-1.peerdas-devnet-7.ethpandaops.io
+            polling_interval: "12s"
         - name: lodestar-geth-1
           type: "beacon_node"
           config:
@@ -116,6 +131,11 @@ forky:
           type: "beacon_node"
           config:
             address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-reth-1.peerdas-devnet-7.ethpandaops.io
+            polling_interval: "12s"
+        - name: nimbus-besu-1
+          type: "beacon_node"
+          config:
+            address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-besu-1.peerdas-devnet-7.ethpandaops.io
             polling_interval: "12s"
         - name: nimbus-geth-1
           type: "beacon_node"
@@ -132,6 +152,11 @@ forky:
           config:
             address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-reth-1.peerdas-devnet-7.ethpandaops.io
             polling_interval: "12s"
+        - name: prysm-besu-1
+          type: "beacon_node"
+          config:
+            address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-besu-1.peerdas-devnet-7.ethpandaops.io
+            polling_interval: "12s"
         - name: prysm-geth-1
           type: "beacon_node"
           config:
@@ -146,6 +171,11 @@ forky:
           type: "beacon_node"
           config:
             address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-reth-1.peerdas-devnet-7.ethpandaops.io
+            polling_interval: "12s"
+        - name: teku-besu-1
+          type: "beacon_node"
+          config:
+            address: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.teku-besu-1.peerdas-devnet-7.ethpandaops.io
             polling_interval: "12s"
         - name: teku-geth-1
           type: "beacon_node"

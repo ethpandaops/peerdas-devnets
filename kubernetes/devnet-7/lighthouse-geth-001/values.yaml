@@ -59,14 +59,14 @@ lighthouse-geth-001:
             lodestar:
               - --paramsFile=/data/network-config/config.yaml
               - --genesisStateFile=/data/network-config/genesis.ssz
-              - --bootnodes=enr:-Iq4QMNjMXusjOZ3z4-LVCpPR4AyhPbPFrhjc7yI47D0MuJZIPOXkS5jEauJYt42ZTcwD2-iozc0a7Kyfn1Vq5D6wbaGAZa04PiJgmlkgnY0gmlwhJ31RtWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QO3tcA7uYreXLRwsLgDOTumg8T7GRKzB4sb0wpCcCBT3E-twXE2_PDdIzEqa-nxKBor7oHBe4AGOtuxCZkysH4cDh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykINHhMZwVSZHigIAAAAAAACCaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --bootnodes=enr:-Iq4QMNjMXusjOZ3z4-LVCpPR4AyhPbPFrhjc7yI47D0MuJZIPOXkS5jEauJYt42ZTcwD2-iozc0a7Kyfn1Vq5D6wbaGAZa04PiJgmlkgnY0gmlwhJ31RtWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QMwmFEQKpYUiyFZDOB9c-Nkmqi6Obd0W8UtcgOemRj61VnZqNUezMd53y3FWA4eV6LVxuSp4wjpIsg9YkftWun8Hh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykILLmKZwVSZH__________-CaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
               - --rest.namespace="*"
               - --network.connectToDiscv5Bootnodes
               - --nat=true
             teku:
               - --network=/data/network-config/config.yaml
               - --genesis-state=/data/network-config/genesis.ssz
-              - --p2p-discovery-bootnodes=enr:-Iq4QMNjMXusjOZ3z4-LVCpPR4AyhPbPFrhjc7yI47D0MuJZIPOXkS5jEauJYt42ZTcwD2-iozc0a7Kyfn1Vq5D6wbaGAZa04PiJgmlkgnY0gmlwhJ31RtWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QO3tcA7uYreXLRwsLgDOTumg8T7GRKzB4sb0wpCcCBT3E-twXE2_PDdIzEqa-nxKBor7oHBe4AGOtuxCZkysH4cDh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykINHhMZwVSZHigIAAAAAAACCaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --p2p-discovery-bootnodes=enr:-Iq4QMNjMXusjOZ3z4-LVCpPR4AyhPbPFrhjc7yI47D0MuJZIPOXkS5jEauJYt42ZTcwD2-iozc0a7Kyfn1Vq5D6wbaGAZa04PiJgmlkgnY0gmlwhJ31RtWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QMwmFEQKpYUiyFZDOB9c-Nkmqi6Obd0W8UtcgOemRj61VnZqNUezMd53y3FWA4eV6LVxuSp4wjpIsg9YkftWun8Hh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykILLmKZwVSZH__________-CaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
               - --p2p-peer-upper-bound=100
               - --data-storage-non-canonical-blocks-enabled=true
               - --data-storage-mode=PRUNE
@@ -85,10 +85,10 @@ lighthouse-geth-001:
               - --enable-debug-rpc-endpoints
               - --verbosity=debug
               - --bootstrap-node=enr:-Iq4QMNjMXusjOZ3z4-LVCpPR4AyhPbPFrhjc7yI47D0MuJZIPOXkS5jEauJYt42ZTcwD2-iozc0a7Kyfn1Vq5D6wbaGAZa04PiJgmlkgnY0gmlwhJ31RtWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI
-              - --bootstrap-node=enr:-Oq4QO3tcA7uYreXLRwsLgDOTumg8T7GRKzB4sb0wpCcCBT3E-twXE2_PDdIzEqa-nxKBor7oHBe4AGOtuxCZkysH4cDh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykINHhMZwVSZHigIAAAAAAACCaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --bootstrap-node=enr:-Oq4QMwmFEQKpYUiyFZDOB9c-Nkmqi6Obd0W8UtcgOemRj61VnZqNUezMd53y3FWA4eV6LVxuSp4wjpIsg9YkftWun8Hh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykILLmKZwVSZH__________-CaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
             lighthouse:
               - --testnet-dir=/data/network-config
-              - --boot-nodes=enr:-Iq4QMNjMXusjOZ3z4-LVCpPR4AyhPbPFrhjc7yI47D0MuJZIPOXkS5jEauJYt42ZTcwD2-iozc0a7Kyfn1Vq5D6wbaGAZa04PiJgmlkgnY0gmlwhJ31RtWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QO3tcA7uYreXLRwsLgDOTumg8T7GRKzB4sb0wpCcCBT3E-twXE2_PDdIzEqa-nxKBor7oHBe4AGOtuxCZkysH4cDh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykINHhMZwVSZHigIAAAAAAACCaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --boot-nodes=enr:-Iq4QMNjMXusjOZ3z4-LVCpPR4AyhPbPFrhjc7yI47D0MuJZIPOXkS5jEauJYt42ZTcwD2-iozc0a7Kyfn1Vq5D6wbaGAZa04PiJgmlkgnY0gmlwhJ31RtWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI,enr:-Oq4QMwmFEQKpYUiyFZDOB9c-Nkmqi6Obd0W8UtcgOemRj61VnZqNUezMd53y3FWA4eV6LVxuSp4wjpIsg9YkftWun8Hh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykILLmKZwVSZH__________-CaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
             nimbus:
               - --network=/data/network-config
               - --validator-monitor-auto=false
@@ -96,7 +96,7 @@ lighthouse-geth-001:
               - --log-level=DEBUG
               - --light-client-data-serve=false
               - --bootstrap-node=enr:-Iq4QMNjMXusjOZ3z4-LVCpPR4AyhPbPFrhjc7yI47D0MuJZIPOXkS5jEauJYt42ZTcwD2-iozc0a7Kyfn1Vq5D6wbaGAZa04PiJgmlkgnY0gmlwhJ31RtWJc2VjcDI1NmsxoQJJ3h8aUO3GJHv-bdvHtsQZ2OEisutelYfGjXO4lSg8BYN1ZHCCIzI
-              - --bootstrap-node=enr:-Oq4QO3tcA7uYreXLRwsLgDOTumg8T7GRKzB4sb0wpCcCBT3E-twXE2_PDdIzEqa-nxKBor7oHBe4AGOtuxCZkysH4cDh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykINHhMZwVSZHigIAAAAAAACCaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
+              - --bootstrap-node=enr:-Oq4QMwmFEQKpYUiyFZDOB9c-Nkmqi6Obd0W8UtcgOemRj61VnZqNUezMd53y3FWA4eV6LVxuSp4wjpIsg9YkftWun8Hh2F0dG5ldHOIAAAAAAADAACDY2djgYCGY2xpZW502IpMaWdodGhvdXNljDcuMS4wLWJldGEuMIRldGgykILLmKZwVSZH__________-CaWSCdjSCaXCEnfVG1YRxdWljgiMpiXNlY3AyNTZrMaEDIVZirGkL1LivoyIMVhX3sh_mxWs6fIuv17dKKkTGfdOIc3luY25ldHMAg3RjcIIjKIN1ZHCCIyg
 
 
   geth:

@@ -44,6 +44,9 @@ assertoor:
     - name:  bootnode-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.bootnode-1.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.bootnode-1.peerdas-devnet-7.ethpandaops.io
+    - name:  grandine-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-besu-1.peerdas-devnet-7.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-besu-1.peerdas-devnet-7.ethpandaops.io
     - name:  grandine-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-geth-1.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-geth-1.peerdas-devnet-7.ethpandaops.io
@@ -62,6 +65,9 @@ assertoor:
     - name:  grandine-reth-2
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.grandine-reth-2.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-reth-2.peerdas-devnet-7.ethpandaops.io
+    - name:  lighthouse-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-besu-1.peerdas-devnet-7.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-besu-1.peerdas-devnet-7.ethpandaops.io
     - name:  lighthouse-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-geth-1.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-7.ethpandaops.io
@@ -80,6 +86,9 @@ assertoor:
     - name:  lighthouse-reth-2
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lighthouse-reth-2.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-reth-2.peerdas-devnet-7.ethpandaops.io
+    - name:  lodestar-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-besu-1.peerdas-devnet-7.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-besu-1.peerdas-devnet-7.ethpandaops.io
     - name:  lodestar-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-geth-1.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-7.ethpandaops.io
@@ -98,6 +107,9 @@ assertoor:
     - name:  lodestar-reth-2
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.lodestar-reth-2.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-reth-2.peerdas-devnet-7.ethpandaops.io
+    - name:  nimbus-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-besu-1.peerdas-devnet-7.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-besu-1.peerdas-devnet-7.ethpandaops.io
     - name:  nimbus-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-geth-1.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-1.peerdas-devnet-7.ethpandaops.io
@@ -116,6 +128,9 @@ assertoor:
     - name:  nimbus-reth-2
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.nimbus-reth-2.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-reth-2.peerdas-devnet-7.ethpandaops.io
+    - name:  prysm-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.prysm-besu-1.peerdas-devnet-7.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-besu-1.peerdas-devnet-7.ethpandaops.io
     - name:  prysm-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.prysm-geth-1.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-geth-1.peerdas-devnet-7.ethpandaops.io
@@ -134,6 +149,9 @@ assertoor:
     - name:  prysm-reth-2
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.prysm-reth-2.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-reth-2.peerdas-devnet-7.ethpandaops.io
+    - name:  teku-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.teku-besu-1.peerdas-devnet-7.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.teku-besu-1.peerdas-devnet-7.ethpandaops.io
     - name:  teku-geth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@rpc.teku-geth-1.peerdas-devnet-7.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.teku-geth-1.peerdas-devnet-7.ethpandaops.io
@@ -158,36 +176,42 @@ assertoor:
     walletPrivkey: "<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.assertoor_private_key}>"
     clientPairNames:
       - bootnode-1
+      - grandine-besu-1
       - grandine-geth-1
       - grandine-geth-2
       - grandine-nethermind-1
       - grandine-nethermind-2
       - grandine-reth-1
       - grandine-reth-2
+      - lighthouse-besu-1
       - lighthouse-geth-1
       - lighthouse-geth-2
       - lighthouse-nethermind-1
       - lighthouse-nethermind-2
       - lighthouse-reth-1
       - lighthouse-reth-2
+      - lodestar-besu-1
       - lodestar-geth-1
       - lodestar-geth-2
       - lodestar-nethermind-1
       - lodestar-nethermind-2
       - lodestar-reth-1
       - lodestar-reth-2
+      - nimbus-besu-1
       - nimbus-geth-1
       - nimbus-geth-2
       - nimbus-nethermind-1
       - nimbus-nethermind-2
       - nimbus-reth-1
       - nimbus-reth-2
+      - prysm-besu-1
       - prysm-geth-1
       - prysm-geth-2
       - prysm-nethermind-1
       - prysm-nethermind-2
       - prysm-reth-1
       - prysm-reth-2
+      - teku-besu-1
       - teku-geth-1
       - teku-geth-2
       - teku-nethermind-1

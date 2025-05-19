@@ -33,6 +33,8 @@ dugtrio:
     name: rpc-lighthouse-geth-001
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.bootnode-1.peerdas-devnet-7.ethpandaops.io
     name: bootnode-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-besu-1.peerdas-devnet-7.ethpandaops.io
+    name: grandine-besu-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-geth-1.peerdas-devnet-7.ethpandaops.io
     name: grandine-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-geth-2.peerdas-devnet-7.ethpandaops.io
@@ -45,6 +47,8 @@ dugtrio:
     name: grandine-reth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.grandine-reth-2.peerdas-devnet-7.ethpandaops.io
     name: grandine-reth-2
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-besu-1.peerdas-devnet-7.ethpandaops.io
+    name: lighthouse-besu-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-1.peerdas-devnet-7.ethpandaops.io
     name: lighthouse-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-geth-2.peerdas-devnet-7.ethpandaops.io
@@ -57,6 +61,8 @@ dugtrio:
     name: lighthouse-reth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lighthouse-reth-2.peerdas-devnet-7.ethpandaops.io
     name: lighthouse-reth-2
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-besu-1.peerdas-devnet-7.ethpandaops.io
+    name: lodestar-besu-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-1.peerdas-devnet-7.ethpandaops.io
     name: lodestar-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-geth-2.peerdas-devnet-7.ethpandaops.io
@@ -69,6 +75,8 @@ dugtrio:
     name: lodestar-reth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.lodestar-reth-2.peerdas-devnet-7.ethpandaops.io
     name: lodestar-reth-2
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-besu-1.peerdas-devnet-7.ethpandaops.io
+    name: nimbus-besu-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-1.peerdas-devnet-7.ethpandaops.io
     name: nimbus-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-geth-2.peerdas-devnet-7.ethpandaops.io
@@ -81,6 +89,8 @@ dugtrio:
     name: nimbus-reth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.nimbus-reth-2.peerdas-devnet-7.ethpandaops.io
     name: nimbus-reth-2
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-besu-1.peerdas-devnet-7.ethpandaops.io
+    name: prysm-besu-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-geth-1.peerdas-devnet-7.ethpandaops.io
     name: prysm-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-geth-2.peerdas-devnet-7.ethpandaops.io
@@ -93,6 +103,8 @@ dugtrio:
     name: prysm-reth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.prysm-reth-2.peerdas-devnet-7.ethpandaops.io
     name: prysm-reth-2
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.teku-besu-1.peerdas-devnet-7.ethpandaops.io
+    name: teku-besu-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.teku-geth-1.peerdas-devnet-7.ethpandaops.io
     name: teku-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.peerdas-devnets.node_ingress.combined}>@bn.teku-geth-2.peerdas-devnet-7.ethpandaops.io

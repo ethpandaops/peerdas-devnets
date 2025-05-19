@@ -23,7 +23,7 @@ variable "lighthouse_geth" {
 variable "lighthouse_besu" {
   default = {
     name            = "lighthouse-besu"
-    count           = 0
+    count           = 1
     validator_start = 0
     validator_end   = 0
   }
@@ -81,7 +81,7 @@ variable "prysm_geth" {
 variable "prysm_besu" {
   default = {
     name            = "prysm-besu"
-    count           = 0
+    count           = 1
     validator_start = 0
     validator_end   = 0
   }
@@ -149,7 +149,7 @@ variable "lodestar_nethermind" {
 variable "lodestar_besu" {
   default = {
     name            = "lodestar-besu"
-    count           = 0
+    count           = 1
     validator_start = 0
     validator_end   = 0
   }
@@ -197,7 +197,7 @@ variable "nimbus_geth" {
 variable "nimbus_besu" {
   default = {
     name            = "nimbus-besu"
-    count           = 0
+    count           = 1
     validator_start = 0
     validator_end   = 0
   }
@@ -255,7 +255,7 @@ variable "teku_geth" {
 variable "teku_besu" {
   default = {
     name            = "teku-besu"
-    count           = 0
+    count           = 1
     validator_start = 0
     validator_end   = 0
   }
@@ -312,7 +312,7 @@ variable "grandine_geth" {
 variable "grandine_besu" {
   default = {
     name            = "grandine-besu"
-    count           = 0
+    count           = 1
     validator_start = 0
     validator_end   = 0
   }
