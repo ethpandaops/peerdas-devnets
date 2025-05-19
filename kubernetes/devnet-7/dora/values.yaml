@@ -4,8 +4,8 @@ dora:
   fullnameOverride: dora
   image:
     repository: docker.ethquokkaops.io/dh/ethpandaops/dora
-    tag: fulu-support
-    pullPolicy: IfNotPresent
+    tag: fulu-support-latest
+    pullPolicy: Always
   resources:
     requests:
       cpu: 500m
