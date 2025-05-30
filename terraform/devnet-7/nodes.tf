@@ -24,8 +24,8 @@ variable "lighthouse_besu" {
   default = {
     name            = "lighthouse-besu"
     count           = 1
-    validator_start = 0
-    validator_end   = 0
+    validator_start = 288
+    validator_end   = 296
   }
 }
 
@@ -82,8 +82,8 @@ variable "prysm_besu" {
   default = {
     name            = "prysm-besu"
     count           = 1
-    validator_start = 0
-    validator_end   = 0
+    validator_start = 296
+    validator_end   = 304
   }
 }
 
@@ -150,8 +150,8 @@ variable "lodestar_besu" {
   default = {
     name            = "lodestar-besu"
     count           = 1
-    validator_start = 0
-    validator_end   = 0
+    validator_start = 304
+    validator_end   = 312
   }
 }
 
@@ -198,8 +198,8 @@ variable "nimbus_besu" {
   default = {
     name            = "nimbus-besu"
     count           = 1
-    validator_start = 0
-    validator_end   = 0
+    validator_start = 312
+    validator_end   = 320
   }
 }
 
@@ -256,8 +256,8 @@ variable "teku_besu" {
   default = {
     name            = "teku-besu"
     count           = 1
-    validator_start = 0
-    validator_end   = 0
+    validator_start = 320
+    validator_end   = 328
   }
 }
 
@@ -313,8 +313,8 @@ variable "grandine_besu" {
   default = {
     name            = "grandine-besu"
     count           = 1
-    validator_start = 0
-    validator_end   = 0
+    validator_start = 328
+    validator_end   = 336
   }
 }
 
